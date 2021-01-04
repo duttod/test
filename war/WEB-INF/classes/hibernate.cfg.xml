@@ -36,6 +36,5 @@
         <mapping resource="com/karrus/demo/shared/hibernate/Feature.hbm.xml"/>
         <mapping resource="com/karrus/demo/shared/hibernate/DiagRp.hbm.xml"/>
         <mapping resource="com/karrus/demo/shared/hibernate/CtIndivData.hbm.xml"/>
-        <mapping resource="com/karrus/demo/shared/hibernate/DiagMag.hbm.xml"/>
     </session-factory>
 </hibernate-configuration>
