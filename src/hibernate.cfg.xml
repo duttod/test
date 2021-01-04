@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC "-//Hibernate/Hibernate Configuration DTD 3.0//EN" "http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+    <session-factory>
+        <property name="hibernate.bytecode.use_reflection_optimizer">false</property>
+        <property name="hibernate.connection.autocommit">true</property>
+        <property name="hibernate.connection.driver_class">org.postgresql.Driver</property>
+        <property name="hibernate.connection.password">karruspwd</property>
+        <property name="hibernate.connection.url">jdbc:postgresql://10.11.0.101:5432/cagnes-rdt</property>
+        <property name="hibernate.connection.username">karrus</property>
+        <property name="hibernate.default_schema">public</property>
+        <property name="hibernate.dialect">org.hibernate.dialect.PostgreSQLDialect</property>
+        <property name="hibernate.search.autoregister_listeners">true</property>
+        <property name="hibernate.validator.apply_to_ddl">false</property>
+        <mapping resource="com/karrus/demo/shared/hibernate/BtMacRt.hbm.xml"/>
+        <mapping resource="com/karrus/demo/shared/hibernate/BtBox.hbm.xml"/>
+        <mapping resource="com/karrus/demo/shared/hibernate/User.hbm.xml"/>
+        <mapping resource="com/karrus/demo/shared/hibernate/SsyItinerary.hbm.xml"/>
+        <mapping resource="com/karrus/demo/shared/hibernate/CtCountData1min.hbm.xml"/>
+        <mapping resource="com/karrus/demo/shared/hibernate/BtMacArchive.hbm.xml"/>
+        <mapping resource="com/karrus/demo/shared/hibernate/Station.hbm.xml"/>
+        <mapping resource="com/karrus/demo/shared/hibernate/LfMarker.hbm.xml"/>
+        <mapping resource="com/karrus/demo/shared/hibernate/SysEnv.hbm.xml"/>
+        <mapping resource="com/karrus/demo/shared/hibernate/LfFonction.hbm.xml"/>
+        <mapping resource="com/karrus/demo/shared/hibernate/LfConf.hbm.xml"/>
+        <mapping resource="com/karrus/demo/shared/hibernate/BtIttArchive.hbm.xml"/>
+        <mapping resource="com/karrus/demo/shared/hibernate/Itinerary.hbm.xml"/>
+        <mapping resource="com/karrus/demo/shared/hibernate/BtStatLast.hbm.xml"/>
+        <mapping resource="com/karrus/demo/shared/hibernate/CtCountData1h.hbm.xml"/>
+        <mapping resource="com/karrus/demo/shared/hibernate/BtStat.hbm.xml"/>
+        <mapping resource="com/karrus/demo/shared/hibernate/BtItt.hbm.xml"/>
+        <mapping resource="com/karrus/demo/shared/hibernate/LfEquipement.hbm.xml"/>
+        <mapping resource="com/karrus/demo/shared/hibernate/Synoptic.hbm.xml"/>
+        <mapping resource="com/karrus/demo/shared/hibernate/FeatureDev.hbm.xml"/>
+        <mapping resource="com/karrus/demo/shared/hibernate/CountData.hbm.xml"/>
+        <mapping resource="com/karrus/demo/shared/hibernate/Feature.hbm.xml"/>
+        <mapping resource="com/karrus/demo/shared/hibernate/DiagRp.hbm.xml"/>
+        <mapping resource="com/karrus/demo/shared/hibernate/CtIndivData.hbm.xml"/>
+        <mapping resource="com/karrus/demo/shared/hibernate/DiagMag.hbm.xml"/>
+    </session-factory>
+</hibernate-configuration>

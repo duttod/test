@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee 
+              http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
+	version="2.5" xmlns="http://java.sun.com/xml/ns/javaee">
+
+	<!-- log -->
+	<servlet>
+		<servlet-name>remoteLoggerServiceImpl</servlet-name>
+		<servlet-class>com.allen_sauer.gwt.log.server.RemoteLoggerServlet</servlet-class>
+		<init-param>
+			<param-name>symbolMaps</param-name>
+			<param-value>WEB-INF\deploy\demo\symbolMaps\</param-value>
+		</init-param>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>remoteLoggerServiceImpl</servlet-name>
+		<url-pattern>/demo/gwt-log</url-pattern>
+	</servlet-mapping>
+
+	<!-- greetServlet servlets -->
+	<servlet>
+		<servlet-name>greetServlet</servlet-name>
+		<servlet-class>com.karrus.demo.server.GreetingServiceImpl</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>greetServlet</servlet-name>
+		<url-pattern>/demo/greet</url-pattern>
+	</servlet-mapping>
+		
+	<!-- core -->
+    <servlet>
+		<servlet-name>coreServlet</servlet-name>
+		<servlet-class>com.karrus.demo.server.core.Core</servlet-class>
+        <load-on-startup>1</load-on-startup>
+    </servlet>
+
+	<!-- Default page to serve -->
+	<welcome-file-list>
+		<welcome-file>Demo.html</welcome-file>
+	</welcome-file-list>
+
+</web-app>

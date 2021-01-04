@@ -1,0 +1,4 @@
+# Module demo
+# RPC service class, partial path of RPC policy file
+com.allen_sauer.gwt.log.client.RemoteLoggerService, 9395117A7B8A08800A042BDFFE48FE8C.gwt.rpc
+com.karrus.demo.client.GreetingService, C8CD33BB51CD32F81B2CBA4F63380A01.gwt.rpc

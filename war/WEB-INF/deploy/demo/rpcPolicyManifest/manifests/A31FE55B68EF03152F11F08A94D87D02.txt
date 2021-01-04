@@ -1,0 +1,2 @@
+serviceClass: com.karrus.demo.client.GreetingService
+path: 0E46425E0CFFD8FFCC01789EEFD655DE.gwt.rpc

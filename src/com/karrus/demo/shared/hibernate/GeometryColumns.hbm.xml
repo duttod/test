@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Generated 14 janv. 2020 17:30:48 by Hibernate Tools 5.4.7.Final --><!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping auto-import="true" default-access="property" default-cascade="none" default-lazy="true">
+    <class dynamic-insert="false" dynamic-update="false" mutable="true" name="com.karrus.demo.shared.hibernate.GeometryColumns" optimistic-lock="version" polymorphism="implicit" select-before-update="false" table="geometry_columns">
+        <composite-id class="com.karrus.demo.shared.hibernate.GeometryColumnsId" mapped="false" name="id" unsaved-value="undefined">
+            <key-property name="FTableCatalog" type="string">
+                <column length="256" name="f_table_catalog"/>
+            </key-property>
+            <key-property name="FTableSchema" type="string">
+                <column name="f_table_schema"/>
+            </key-property>
+            <key-property name="FTableName" type="string">
+                <column name="f_table_name"/>
+            </key-property>
+            <key-property name="FGeometryColumn" type="string">
+                <column name="f_geometry_column"/>
+            </key-property>
+            <key-property name="coordDimension" type="java.lang.Integer">
+                <column name="coord_dimension"/>
+            </key-property>
+            <key-property name="srid" type="java.lang.Integer">
+                <column name="srid"/>
+            </key-property>
+            <key-property name="type" type="string">
+                <column length="30" name="type"/>
+            </key-property>
+        </composite-id>
+    </class>
+</hibernate-mapping>

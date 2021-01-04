@@ -1,0 +1,114 @@
+<!doctype html>
+
+<html>
+  <head>
+
+   <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+   <!-- <meta http-equiv=”Pragma” content=”no-cache”>
+	<meta http-equiv=”Expires” content=”-1″>
+	<meta http-equiv=”CACHE-CONTROL” content=”NO-CACHE”> -->
+    <link type="text/css" rel="stylesheet" href="Demo.css">
+    <link rel="stylesheet" href="demo/leaflet/leaflet.css" />
+
+    <title>Web Application Starter Project</title>
+
+    <script  src="demo/demo.nocache.js"></script>
+    <script src="demo/leaflet/leaflet-src.js"></script>
+    <script src="jquery-3.4.1.min.js"></script>
+    <!-- <script src ="demo/jquery-ui-1.12.1/jquery-ui.min.js"></script> -->
+
+  </head>
+
+  <body>
+
+
+	  <div id="map">
+
+	  </div>
+
+	 <div id="interface">
+			<!--    <div class=time align="center">
+						<IFRAME src="http://www.Heure.com/heure-fr.php?timezone=2&size=24" WIDTH="100px" HEIGHT="23px" BORDER="0" MARGINWIDTH="0" MARGINHEIGHT="10" HSPACE="0" VSPACE="0" FRAMEBORDER="0" SCROLLING="no"> </IFRAME>
+			  </div> -->
+
+
+	 <!-- This is hidden text -->
+
+
+	</div>
+	  <div id=informationsPopupMarker>
+
+
+	  </div>
+
+
+
+  <script>
+  
+      function onClickUBR(station) {
+     var x = document.getElementById(station);
+      var y = document.getElementById("ubrStatement"+station);
+      x.innerHTML = y.innerHTML; }
+ function onClickBluetooth(station) {
+ 	sleep(50).then(() => {
+  		var x = document.getElementById(station);
+      var y = document.getElementById("bluetooth"+station);
+      x.innerHTML = y.innerHTML;
+  
+		});
+      }
+
+ function onClickTraffic(station) {
+ 	sleep(50).then(() => {
+  		var x = document.getElementById(station);
+	      var y = document.getElementById("traffic"+station);
+	      x.innerHTML = y.innerHTML; 
+  
+		});
+
+	 }
+     
+ function onClickMeteo(station) {
+     var x = document.getElementById(station);
+      var y = document.getElementById("meteo"+station);
+      x.innerHTML = y.innerHTML; }
+
+  function onClickV2x(station) {
+     var x = document.getElementById(station);
+      var y = document.getElementById("v2x"+station);
+      x.innerHTML = y.innerHTML; }
+
+  function sleep (time) {
+  	return new Promise((resolve) => setTimeout(resolve, time));
+	}
+
+	function ouverturepmv(id){
+		sleep(50).then(() => {
+  		var x = document.getElementById("pmv"+id);
+      	var y = document.getElementById("pmvinfo"+id);
+      	y = y.firstChild;
+      	x.innerHTML = y.innerHTML; 
+  
+		});
+	}
+
+ $('body').on('contextmenu', 'video', function(e){ return false; });
+
+  function ouverturepopup(station){
+
+
+/* sleep(50).then(() => {
+  
+  //dragDrop.initElement(pop);
+
+  var icontraffic = document.getElementById(station+"imgT");
+  if($(icontraffic).css("background-color") == "rgb(255, 0, 0)"){
+    $("#"+station+"ipop").css("background-color","red");
+  }
+
+}); */
+}
+   </script>
+   
+  </body>
+</html>

@@ -1,0 +1,22 @@
+## OLD
+  		<property name="hibernate.connection.driver_class">org.postgresql.Driver</property>
+		<property name="hibernate.connection.password">postgres</property>
+        <property name="hibernate.connection.url">jdbc:postgresql://localhost/Demo</property>
+        <property name="hibernate.connection.username">postgres</property>
+        <property name="hibernate.dialect">org.hibernate.dialect.PostgreSQLDialect</property>
+  		<property name="hibernate.default_schema">public</property>
+  		<property name="connection.autocommit">true</property> 
+  		<property name="cache.provider_class">org.hibernate.cache.internal.NoCacheProvider</property>
+  		<property name="current_session_context_class">thread</property>
+  		<property name="connection.pool_size">1</property>
+## NEW
+ 		<property name="hibernate.connection.driver_class">org.postgresql.Driver</property>
+		<property name="hibernate.connection.password">postgres</property>
+        <property name="hibernate.connection.url">jdbc:postgresql://karrus-its.com:11432/syncro</property>
+        <property name="hibernate.connection.username">postgres</property>
+        <property name="hibernate.dialect">org.hibernate.dialect.PostgreSQLDialect</property>
+  		<property name="hibernate.default_schema">public</property>
+    
+## HTTP ERROR
+        <!DOCTYPE hibernate-configuration PUBLIC "-//Hibernate/Hibernate Configuration DTD 3.0//EN" "http://hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+        

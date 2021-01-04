@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Generated 14 janv. 2020 17:44:50 by Hibernate Tools 5.4.7.Final --><!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping auto-import="true" default-access="property" default-cascade="none" default-lazy="true">
+    <class dynamic-insert="false" dynamic-update="false" mutable="true" name="com.karrus.demo.shared.hibernate.BtBox" optimistic-lock="version" polymorphism="implicit" select-before-update="false" table="bt_box">
+        <composite-id class="com.karrus.demo.shared.hibernate.BtBoxId" mapped="false" name="id" unsaved-value="undefined">
+            <key-property name="site" type="string">
+                <column length="45" name="site"/>
+            </key-property>
+            <key-property name="serial" type="string">
+                <column length="45" name="serial"/>
+            </key-property>
+        </composite-id>
+        <property generated="never" lazy="false" name="installationDate" optimistic-lock="true" type="timestamp" unique="false">
+            <column length="35" name="installation_date"/>
+        </property>
+        <property generated="never" lazy="false" name="enabled" optimistic-lock="true" type="java.lang.Boolean" unique="false">
+            <column name="enabled"/>
+        </property>
+        <property generated="never" lazy="false" name="ip" optimistic-lock="true" type="string" unique="false">
+            <column length="15" name="ip"/>
+        </property>
+        <property generated="never" lazy="false" name="ipVpn" optimistic-lock="true" type="string" unique="false">
+            <column length="15" name="ip_vpn"/>
+        </property>
+        <property generated="never" lazy="false" name="ipLastSeen" optimistic-lock="true" type="timestamp" unique="false">
+            <column length="35" name="ip_last_seen"/>
+        </property>
+        <property generated="never" lazy="false" name="ipVpnLastSeen" optimistic-lock="true" type="timestamp" unique="false">
+            <column length="35" name="ip_vpn_last_seen"/>
+        </property>
+        <property generated="never" lazy="false" name="comment" optimistic-lock="true" type="string" unique="false">
+            <column length="400" name="comment"/>
+        </property>
+        <property generated="never" lazy="false" name="longitude" optimistic-lock="true" type="java.lang.Double" unique="false">
+            <column name="longitude" precision="17" scale="17"/>
+        </property>
+        <property generated="never" lazy="false" name="latitude" optimistic-lock="true" type="java.lang.Double" unique="false">
+            <column name="latitude" precision="17" scale="17"/>
+        </property>
+    </class>
+</hibernate-mapping>

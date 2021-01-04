@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Generated 14 janv. 2020 17:44:50 by Hibernate Tools 5.4.7.Final --><!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping auto-import="true" default-access="property" default-cascade="none" default-lazy="true">
+    <class dynamic-insert="false" dynamic-update="false" mutable="true" name="com.karrus.demo.shared.hibernate.CtCountData1min" optimistic-lock="version" polymorphism="implicit" select-before-update="false" table="ct_count_data_1min">
+        <composite-id class="com.karrus.demo.shared.hibernate.CtCountData1minId" mapped="false" name="id" unsaved-value="undefined">
+            <key-property name="timestamp" type="timestamp">
+                <column length="35" name="timestamp"/>
+            </key-property>
+            <key-property name="station" type="string">
+                <column length="100" name="station"/>
+            </key-property>
+            <key-property name="lane" type="string">
+                <column length="100" name="lane"/>
+            </key-property>
+            <key-property name="occupancy" type="java.lang.Double">
+                <column name="occupancy" precision="17" scale="17"/>
+            </key-property>
+            <key-property name="count" type="java.lang.Long">
+                <column name="count"/>
+            </key-property>
+            <key-property name="speed" type="java.lang.Double">
+                <column name="speed" precision="17" scale="17"/>
+            </key-property>
+            <key-property name="latency" type="serializable">
+                <column name="latency"/>
+            </key-property>
+        </composite-id>
+    </class>
+</hibernate-mapping>

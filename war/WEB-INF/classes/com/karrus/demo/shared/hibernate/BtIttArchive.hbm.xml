@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Generated 14 janv. 2020 17:44:50 by Hibernate Tools 5.4.7.Final --><!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping auto-import="true" default-access="property" default-cascade="none" default-lazy="true">
+    <class dynamic-insert="false" dynamic-update="false" mutable="true" name="com.karrus.demo.shared.hibernate.BtIttArchive" optimistic-lock="version" polymorphism="implicit" select-before-update="false" table="bt_itt_archive">
+        <composite-id class="com.karrus.demo.shared.hibernate.BtIttArchiveId" mapped="false" name="id" unsaved-value="undefined">
+            <key-property name="timestamp" type="timestamp">
+                <column length="35" name="timestamp"/>
+            </key-property>
+            <key-property name="origin" type="string">
+                <column length="45" name="origin"/>
+            </key-property>
+            <key-property name="destination" type="string">
+                <column length="45" name="destination"/>
+            </key-property>
+            <key-property name="macSecret" type="string">
+                <column length="32" name="mac_secret"/>
+            </key-property>
+            <key-property name="class_" type="string">
+                <column length="45" name="class"/>
+            </key-property>
+            <key-property name="attValid" type="java.lang.Boolean">
+                <column name="att_valid"/>
+            </key-property>
+            <key-property name="travelTime" type="java.lang.Integer">
+                <column name="travel_time"/>
+            </key-property>
+        </composite-id>
+    </class>
+</hibernate-mapping>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Generated 14 janv. 2020 17:30:48 by Hibernate Tools 5.4.7.Final --><!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping auto-import="true" default-access="property" default-cascade="none" default-lazy="true">
+    <class dynamic-insert="false" dynamic-update="false" mutable="true" name="com.karrus.demo.shared.hibernate.SpatialRefSys" optimistic-lock="version" polymorphism="implicit" select-before-update="false" table="spatial_ref_sys">
+        <id name="srid" type="int">
+            <column name="srid"/>
+            <generator class="assigned"/>
+        </id>
+        <property generated="never" lazy="false" name="authName" optimistic-lock="true" type="string" unique="false">
+            <column length="256" name="auth_name"/>
+        </property>
+        <property generated="never" lazy="false" name="authSrid" optimistic-lock="true" type="java.lang.Integer" unique="false">
+            <column name="auth_srid"/>
+        </property>
+        <property generated="never" lazy="false" name="srtext" optimistic-lock="true" type="string" unique="false">
+            <column length="2048" name="srtext"/>
+        </property>
+        <property generated="never" lazy="false" name="proj4text" optimistic-lock="true" type="string" unique="false">
+            <column length="2048" name="proj4text"/>
+        </property>
+    </class>
+</hibernate-mapping>

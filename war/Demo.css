@@ -1,0 +1,372 @@
+/** Add css rules here for your application. */
+body {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+}
+/** Example rules used by the template application (remove for your app) */
+h1 {
+	font-size: 2em;
+	font-weight: bold;
+	color: #777777;
+	margin: 40px 0px 70px;
+	text-align: center;
+}
+
+.sendButton {
+	display: block;
+	font-size: 16pt;
+}
+
+/** Most GWT widgets already have a style name defined */
+
+#map {
+	height: 900px;
+	width: 90%;
+}
+
+.leaflet-popup-pane {
+	id: "popupe";
+}
+
+#informationsPopupMarker {
+	height: 0px;
+	padding: 0px;
+	margin: 0px;
+	width: 0px;
+	font-size: 0px;
+}
+
+#informationsPopupMarker  div {
+	height: 0px;
+	visibility: hidden;
+	width: 0px padding: 0px;
+	margin: 0px;
+	font-size: 0px;
+}
+
+#informationsPopupMarker th, #informationsPopupMarker tr,
+	#informationsPopupMarker td, #informationsPopupMarker tbody,
+	#informationsPopupMarker table {
+	height: 0px;
+	visibility: hidden;
+	width: 0px;
+	padding: 0px;
+	margin: 0px;
+	font-size: 0px;
+}
+
+.dialogVPanel {
+	margin: 5px;
+}
+
+.UBR thead {
+	background-color: #3f87a6;
+	color: #fff;
+}
+
+ .enabled {
+	background-color: #e4fFf5;
+	
+}
+
+ .disabled {
+	background-color: #888888;
+	pointer-events: none;
+	  cursor: not-allowed;
+}
+
+.UBR caption {
+	height: 5px;
+	background-color: black;
+}
+
+.UBR {
+	border-collapse: collapse;
+	font: none;
+	font: 12px/1 "Helvetica Neue", Arial, Helvetica, sans-serif;
+	position: relative;
+	left: -21.5px;
+	top: 5px;
+}
+
+.UBR img {
+	width: 10px;
+	height: 10px;
+}
+
+.leaflet-popup-content {
+	margin: none;
+	background-color: #666666;
+}
+
+.serverResponseLabelError {
+	color: red;
+}
+
+/** Set ids using widget.getElement().setId("idOfElement") */
+#closeButton {
+	margin: 15px 6px 6px;
+}
+
+.UBRTooltip {
+	left: 45px;
+}
+
+/** Popup CSS **/
+/* ----------- Menu -------- */
+img {
+	width: 12px;
+	height: 12px;
+}
+
+.navbar {
+	margin-right: auto;
+	margin-left: auto;
+}
+
+nav ul {
+	display: flex;
+	padding-left: 0px;
+	margin: 0px;
+}
+
+nav li {
+	display: flex;
+	border-left: 1px solid rgb(120, 120, 120);
+}
+
+nav li:last-child {
+	border-right: 1px solid rgb(120, 120, 120);
+}
+/* ----------- Menu -------- */
+button {
+	background-color: white;
+	border: none;
+	cursor: pointer;
+}
+
+button:hover {
+	background-color: #AAAAAA;
+	cursor: pointer;
+}
+
+.content {
+	padding-top: 15px;
+}
+
+.content th {
+	padding: 0 15px;
+	text-align: end;
+}
+
+.content td {
+	text-align: start;
+}
+
+.UBRPopupContent {
+	color: white;
+}
+
+.UBR {
+	/*border-top: 2px solid rgb(120, 120, 120);
+	border-bottom: 2px solid rgb(120, 120, 120);*/
+}
+
+.pmv{
+	background-color:black;
+	color:#FFA500;
+	resize: none;
+}
+
+.leaflet-popup-content-wrapper, .leaflet-popup-tip {
+	background: #666666 !important;
+	color: #333;
+	width: 180px;
+	box-shadow: 0 3px 14px rgba(0, 0, 0, 0.4);
+}
+
+.V2x p {
+	margin: 0px !important;
+	font-size: 0.8em !important;
+}
+
+
+.Meteo {
+	margin-top: 10px;
+}
+
+.Meteo th, .Meteo td {
+	padding: 3px 6px;
+}
+
+.Meteo tr td:last-child {
+	font-size: 0.7em;
+	text-align: center;
+}
+
+.Meteo th {
+	min-width: 80px;
+}
+
+ .donnee:hover {
+	background-color: #BBBBBB;
+	color: #333333;
+  border-style: solid;
+  border-width: 1px;
+  border-color:black;
+} 
+ .donnee td {
+  border-style: solid;
+  border-width: 1px;
+  border-color:black;
+} 
+ .donnee th {
+  border-style: solid;
+  border-width: 1px;
+  border-color:black;
+} 
+ .titre td {
+  border-style: solid;
+  border-width: 1px;
+  border-color:black;
+} 
+ .titre th {
+  border-style: solid;
+  border-width: 1px;
+  border-color:black;
+} 
+.timestamp th {
+	font-size:0.8em;
+	padding-top:10px!important;
+	padding-bottom:4px!important;
+ 
+}
+
+
+
+.UbrStatement {
+	margin-top: 10px;
+}
+
+.UbrStatement th {
+	width: 100px;
+}
+
+.UbrStatement td {
+	width: 20px;
+}
+
+
+.UBRStatement tr td:last-child {
+	font-size: 0.7em!important;
+	text-align: center!important;
+}
+
+.Bluetooth {
+	margin-top: 10px;
+}
+
+.Bluetooth th {
+	font-size: 0.85em;
+	width: 150px;
+	padding: 0px;
+}
+
+
+/* Traffic */
+
+.Traffic td {
+	min-width: 15px;
+	text-align: center;
+	padding: 0px;
+}
+
+.Traffic {
+	margin-top: 10px;
+	min-width: 147px;
+}
+
+.Traffic th {
+	min-width: 55px;
+	padding: 0px;
+}
+
+.Traffic .titre {
+	background-color: #444444;
+}
+.Traffic .titre th {
+	font-size : 10px;
+}
+.Traffic .titre td {
+font-size : 10px;
+	
+}
+
+.textALM {
+	margin-top:0px!important;
+}
+
+.dateALM  {
+	font-size:0.8em;
+	margin-bottom:0px!important;
+}
+
+
+
+.bluetooth {
+	border-top: 2px solid rgb(120, 120, 120);
+	border-bottom: 2px solid rgb(120, 120, 120);
+}
+
+.info {
+	padding: 6px 8px;
+	font: 14px/16px Arial, Helvetica, sans-serif;
+	background: white;
+	background: rgba(255, 255, 255, 0.8);
+	box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+	border-radius: 5px;
+}
+
+.info h4 {
+	margin: 0 0 5px;
+	color: #777;
+}
+
+.legend {
+	text-align: left;
+	line-height: 18px;
+	color: #555;
+}
+
+.legend i {
+	width: 18px;
+	height: 18px;
+	float: left;
+	margin-right: 8px;
+	opacity: 0.7;
+}
+
+.leaflet-control.enabled a {
+	background-color: yellow;
+}
+
+
+
+#interface{
+	display : flex;
+	flex-direction:column;
+	justify-content: space-between;
+	
+}
+
+.polylineT{
+	border: 5px solid black;
+	background-color: white;
+	color: black;
+}
+
+.popupPmv .leaflet-popup-content-wrapper{
+	width: auto;
+}

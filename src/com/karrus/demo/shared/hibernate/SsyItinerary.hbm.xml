@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Generated 14 janv. 2020 17:44:50 by Hibernate Tools 5.4.7.Final --><!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping auto-import="true" default-access="property" default-cascade="none" default-lazy="true">
+    <class dynamic-insert="false" dynamic-update="false" mutable="true" name="com.karrus.demo.shared.hibernate.SsyItinerary" optimistic-lock="version" polymorphism="implicit" select-before-update="false" table="ssy_itinerary">
+        <id name="name" type="string">
+            <column length="90" name="name"/>
+            <generator class="assigned"/>
+        </id>
+        <property generated="never" lazy="false" name="ssyId" optimistic-lock="true" type="java.lang.Integer" unique="false">
+            <column name="ssy_id"/>
+        </property>
+        <property generated="never" lazy="false" name="minValidTt" optimistic-lock="true" type="java.lang.Integer" unique="false">
+            <column name="min_valid_tt"/>
+        </property>
+        <property generated="never" lazy="false" name="maxFreeflowTt" optimistic-lock="true" type="java.lang.Integer" unique="false">
+            <column name="max_freeflow_tt"/>
+        </property>
+    </class>
+</hibernate-mapping>
